@@ -1,0 +1,367 @@
+h3{
+    margin: 0;
+}
+#cart img{
+    width: 16px;
+    vertical-align: inherit;
+}
+a:hover{
+    text-decoration: none;
+}
+.main{
+    width: 100%;
+    background: #f5f5f5;
+    padding: 30px 0;
+    padding-bottom: 60px;
+    .main-wrap{
+        width: 1240px;
+        margin: 0 auto;
+        background: #fff;
+        padding-top: 40px;  
+      //添加地址
+        .delivery-address{
+            margin: 0 48px;
+            min-height: 244px;
+            h3{
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 20px;
+                margin-bottom: 20px;
+                color: #333;
+            }
+            .address-body{
+                min-height: 200px;
+                overflow: hidden;
+                margin-bottom: 20px;
+                .address-item{
+                    width: 268px;
+                    height: 178px;
+                    border: 1px solid #e0e0e0;
+                    float: left;
+                    margin-bottom: 5px;
+                    margin-right: 5px;
+                    span{
+                       color: #b0b0b0; 
+                       display: block;
+                       text-align: center;
+                    }
+                    .icon{
+                        width: 30px;
+                        height: 30px;
+                        font-size: 30px;
+                        color: #E0E0E0;
+                        display: block;
+                        margin: 63px auto 8px;
+                    } 
+                }
+                .my-address{
+                    padding: 30px;  
+                    position: relative;
+                    dt{
+                        font-size: 18px;
+                        font-weight: normal;
+                        color: #333;
+                        line-height: 30px;
+                        margin-bottom: 10px;
+                    }
+                    dd{
+                        color: #757575;
+                        line-height: 22px;
+                    }
+                    .addr-handle{
+                        width: 265px;
+                        height: 16px;
+                        position: absolute;
+                        bottom: 10px;
+                        right: 0;
+                        i{
+                            position: absolute;
+                            bottom: 10px;
+                            cursor: pointer;
+                            font-size: 14px;
+                        }
+                        i:first-child{
+                            right: 35px;
+                            color: #66AFE9;
+                        }
+                        i:last-child{
+                            right: 10px;
+                            color: red;
+                        }
+                    }
+                    
+                }
+                .sect{
+                    border: 2px solid orangered;
+                }
+            }
+        }
+        //商品列表
+        .goods{
+            margin: 0 48px;
+            .head{
+                height: 40px;
+                border-bottom: 1px solid #e0e0e0;
+                h3{
+                    float: left;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 40px;
+                    margin-bottom: 20px;
+                    color: #333;
+                }
+                a{
+                    float: right;
+                    line-height: 40px;
+                    color: #b0b0b0;
+                    font-size: 14px;
+                    i{
+                        font-size: 12px;
+                        margin-left: 5px;
+                    }
+                }
+            }
+            .goods-list{
+                padding: 5px 0;
+                border-bottom: 1px solid #e0e0e0;
+                li{
+                    line-height: 40px;
+                    color: #424242;
+                    height: 40px;
+                    margin-top: 15px;
+                    .col{
+                        float: left;
+                        text-align: center;
+                        font-size: 14px;
+                    }
+                    .col-img{
+                        width: 110px;
+                        height: 40px;
+                        margin: 0 auto;
+                        margin-right: 10px;
+                        img{
+                        width: 40px;
+                        height: 40px;
+                        }
+                    }
+                    .col-name{
+                        width: 650px;
+                        text-align: left;
+                    }
+                    .col-price{
+                        width: 100px;
+                    }
+                    .col-amount{
+                        width: 100px;
+                    }
+                    .col-total{
+                        width: 150px;
+                        color: #ff6700;
+                    }
+                }
+            }
+            
+        }
+        
+        //配送方式
+        .delivery{
+            height: 90px;
+            margin: 0 48px;
+            padding: 25px 0;
+            border-bottom: 1px solid #e0e0e0;
+            h3{
+                width: 150px;
+                float: left;
+                line-height: 38px;
+                font-weight: normal;
+                color: #333;
+                font-size: 18px;
+            }
+            span{
+                float: left;
+                height: 38px;
+                line-height: 38px;
+                font-size: 14px;
+                color: #ff6700;
+            }
+        }
+        //发票
+        .invoice{
+            height: 90px;
+            margin: 0 48px;
+            padding: 25px 0;
+            h3{
+                width: 150px;
+                float: left;
+                line-height: 38px;
+                font-weight: normal;
+                color: #333;
+                font-size: 18px;
+            }
+            div{
+                float: left;
+                span{
+                    float: left;
+                    height: 38px;
+                    line-height: 38px;
+                    font-size: 14px;
+                    color: #ff6700;
+                    margin-right: 15px;
+                }
+            }
+        }
+        
+        .calc-total{
+            margin: 0 48px;
+            font-size: 14px;
+            min-height: 200px;
+            padding: 20px 0;
+            .left{
+                width: 150px;
+                float: left;
+                div{
+                    height: 50px;
+                    line-height: 50px;
+                    cursor: pointer;
+                }
+            }
+            .right{
+                float: right;
+                text-align: right;
+                margin-bottom: 20px;
+                ul{
+                    float: right;
+                    li{
+                        display: block;
+                        padding-left: 100px;
+                        line-height: 2;
+                        label{
+                            width: 100px;
+                            color: #757575;
+                        }
+                        .val{
+                            color: #ff6700;
+                        }
+                    }
+                    .total-price{
+                        margin-top: 10px;
+                        .val{
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+        
+        //结算
+        .settlement{
+            padding: 20px 48px;
+            border-top: 1px solid #e0e0e0;
+            height: 80px;
+            .fl{
+                float: left;
+                width: 700px;
+                height: 38px;
+                span{
+                    display: block;
+                }
+            }
+            .fr{
+                float: right;
+                a{
+                    float: right;
+                    width: 158px;
+                    height: 38px;
+                    line-height: 38px;
+                    margin-left: 30px;
+                    vertical-align: top;
+                    background: #ff6700;
+                    color: #fff;
+                    text-align: center;
+                    
+                }
+            }
+        }
+    }
+}
+//模态框
+.modal-body{
+    padding: 40px 40px 0 40px;
+    height: 320px;
+    .form-name{
+        height: 42px;
+        input{
+            border: 0;
+            border: 1px solid #e0e0e0;
+            width: 251px;
+            padding: 10px 16px;
+            float: left;
+        }
+        .name{
+            margin-right: 14px;
+        }
+    }
+    .form-address{
+        height: 42px;
+        margin-top: 20px;
+        position: relative;
+        input{
+            border: 0;
+            border: 1px solid #e0e0e0;
+            width: 516px;
+            padding: 10px 16px;
+            
+        }
+        i{
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            color: #777;
+        }
+    }
+    .form-address-detail{
+        margin: 20px 0;
+        textarea{
+            width: 516px;
+            border: 1px solid #e0e0e0;
+            padding: 10px 16px;
+        }
+    }
+    .form-zipcode-tag{
+        height: 42px;
+        input{
+            border: 0;
+            border: 1px solid #e0e0e0;
+            width: 251px;
+            padding: 10px 16px;
+            float: left;
+        }
+        .zipcode{
+            margin-right: 14px;
+        }
+    }
+}
+.modal-footer{
+    background: #F5F5F5;
+    text-align: center;
+    .btn{
+        width: 158px;
+        height: 38px;
+    }
+}
+
+.footer{
+    margin-top: 0;
+}
+
+//省市区
+.adress{position:absolute;top:0;left:0;width:457px;margin:0;padding-left:5px;height:30px;line-height:30px;font-size:12px;border:1px solid #c9cacb;}
+._citys { width: 450px; display: inline-block; border: 2px solid #eee; padding: 5px; position: relative;background: #fff; }
+._citys span { color: #05920a; height: 15px; width: 15px; line-height: 15px; text-align: center; border-radius: 3px; position: absolute; right: 10px; top: 10px; border: 1px solid #05920a; cursor: pointer; }
+._citys0 { width: 95%; height: 34px; line-height: 34px; display: inline-block; border-bottom: 2px solid #05920a; padding: 0px 5px; font-size:14px; font-weight:bold; margin-left:6px; }
+._citys0 li { display: inline-block; line-height: 34px; font-size: 15px; color: #888; width: 80px; text-align: center; cursor: pointer; }
+._citys1 { width: 100%; display: inline-block; padding: 10px 0; }
+._citys1 a { width: 83px; height: 35px; display: inline-block; background-color: #f5f5f5; color: #666; margin-left: 6px; margin-top: 3px; line-height: 35px; text-align: center; cursor: pointer; font-size: 12px; border-radius: 5px; overflow: hidden; }
+._citys1 a:hover { color: #fff; background-color: #05920a; }
+.AreaS { background-color: #05920a !important; color: #fff !important; }
+

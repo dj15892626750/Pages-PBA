@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>填写订单</title>
+		<link rel="stylesheet" type="text/css" href="/Pages-PBA/css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="/Pages-PBA/lib/bootstrap/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/Pages-PBA/css/account.css"/>
+		<script src="/Pages-PBA/lib/requirejs/require.min.js" data-main="/Pages-PBA/js/account"></script>
+	</head>
+	<body>
+		<!--顶部-->
+		<div id="container-header"></div>
+		
+		<div class="main">
+			<div class="main-wrap">
+				<!--收货地址-->
+				<div class="delivery-address">
+					<h3>收货地址</h3>
+					<div class="address-body">
+						<div class="address-item" data-toggle="modal" data-target="#addModal">
+							<i class="icon glyphicon glyphicon-plus-sign"></i>
+							<span>添加新地址</span>
+						</div>
+					</div>
+				</div>
+				<!--商品列表-->
+				<div class="goods">
+					<div class="head">
+						<h3>商品列表</h3>
+						<a href="/Pages-PBA/html/cart.html">返回购物车<i class="glyphicon glyphicon-chevron-right"></i></a>
+					</div>
+					<ul class="goods-list">
+
+					</ul>
+				</div>
+				<!--配送方式-->
+				<div class="delivery">
+					<h3>配送方式</h3>
+					<span>快递免邮</span>
+				</div>
+				<!--发票-->
+				<div class="invoice">
+					<h3>发票</h3>
+					<div>
+						<span>电子发票</span>
+						<span>个人</span>
+						<span>商品明细</span>
+					</div>
+				</div>
+				<!--商品总计-->
+				<div class="calc-total">
+					<div class="left">
+						<div>
+							<i></i>
+							<span>使用优惠券</span>
+						</div>
+					</div>
+					<div class="right">
+						<ul>
+							<li>
+								<label>商品件数:</label>
+								<span class="val amount">2件</span>
+							</li>
+							<li>
+								<label>商品总价:</label>
+								<span class="val totalprice">￥500.00</span>
+							</li>
+							<li>
+								<label>优惠金额:</label>
+								<span class="val discount">￥0.00</span>
+							</li>
+							<li class="total-price">
+								<label>应付总额:</label>
+								<span class="val pay-money">￥500.00</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<!--结算-->
+				<div class="settlement">
+					<div class="fl">
+						
+					</div>
+					<div class="fr">
+						<a href="javascript:">提交订单</a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<!--add模态框-->
+		<div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalLabel">
+		  	<div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      	<div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="addModalLabel">添加收获地址</h4>
+			      	</div>
+			      	<div class="modal-body">
+			      		<form class="add-address">
+			      			<div class="form-name">
+				      			<input type="text" name="name" class="name" value="" placeholder="姓名"/>
+				      			<input type="text" name="phone" class="phone" value="" placeholder="手机号"/>
+				      		</div>
+				      		<div class="add form-address">
+				      			<input type="text" name="address" class="address" value="" placeholder="选择地址"/>
+				      			<i class="glyphicon glyphicon-triangle-bottom"></i>
+				      		</div>
+				      		<div class="form-address-detail">
+				      			<textarea class="address-detail" placeholder="详细地址"></textarea>
+				      		</div>
+				      		<div class="form-zipcode-tag">
+				      			<input type="text" name="zipcode" class="zipcode" value="" placeholder="邮政编码"/>
+				      			<input type="text" name="tag" class="tag" value="" placeholder="地址标签"/>
+				      		</div>
+			      		</form>
+			      	</div>
+			      	<div class="modal-footer">
+			      		<button type="button" id="add-save" class="btn btn-primary">保存</button>
+				        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+			      	</div>
+			    </div>
+		  	</div>
+		</div>
+		
+		<!--update模态框-->
+		<div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="updateModalLabel">
+		  	<div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      	<div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="updateModalLabel">修改收货地址</h4>
+			      	</div>
+			      	<div class="modal-body">
+			      		<form class="update-address">
+			      			<input type="hidden" class="id" value="" />
+			      			<div class="form-name">
+				      			<input type="text" name="name" class="name" value="" placeholder="姓名"/>
+				      			<input type="text" name="phone" class="phone" value="" placeholder="手机号"/>
+				      		</div>
+				      		<div class="update form-address">
+				      			<input type="text" name="address" class="address" value="" placeholder="选择地址"/>
+				      			<i class="glyphicon glyphicon-triangle-bottom"></i>
+				      		</div>
+				      		<div class="form-address-detail">
+				      			<textarea class="address-detail" placeholder="详细地址"></textarea>
+				      		</div>
+				      		<div class="form-zipcode-tag">
+				      			<input type="text" name="zipcode" class="zipcode" value="" placeholder="邮政编码"/>
+				      			<input type="text" name="tag" class="tag" value="" placeholder="地址标签"/>
+				      		</div>
+			      		</form>
+			      	</div>
+			      	<div class="modal-footer">
+			      		<button type="button" id="update-save" class="btn btn-primary">保存</button>
+				        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+			      	</div>
+			    </div>
+		  	</div>
+		</div>
+		
+		<div style="clear: both;"></div>
+		<!--底部-->
+		<div class="footer"></div>
+		
+		<script type="text/html" id="account-template">
+			{{each goods prod}}
+			<li>
+				<div class="col col-img"><img src="{{prod.img}}"/></div>
+				<div class="col col-name">{{prod.title}}</div>
+				<div class="col col-price">{{prod.price}}</div>
+				<div class="col col-amount">{{prod.amount}}</div>
+				<div class="col col-total">{{prod.subtotal}}</div>
+			</li>
+			{{/each}}
+		</script>
+		
+		<!--用户地址-->
+		<script type="text/html" id="address-template">
+			{{each address prod}}
+			<div class="address-item my-address">
+				<dl>
+					<dt>{{prod.name}}</dt>
+					<dd class="mobile">{{prod.phone}}</dd>
+					<dd class="adr">{{prod.hcity}} {{prod.hproper}} {{prod.harea}}</dd>
+					<dd class="adr-det">{{prod.address_detail}}</dd>
+				</dl>
+				<input type="hidden" class="id" value="{{prod.id}}" />
+				<input type="hidden" class="zipcode" value="{{prod.zipcode}}" />
+				<input type="hidden" class="tag" value="{{prod.tag}}" />
+				<div class="addr-handle">
+					<i class="glyphicon glyphicon-pencil upd" data-toggle="modal" data-target="#updateModal"></i>
+					<i class="glyphicon glyphicon-trash del"></i>
+				</div>
+			</div>
+			{{/each}}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>列表页</title>
+		<link rel="stylesheet" type="text/css" href="/Pages-PBA/css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="/Pages-PBA/lib/bootstrap/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/Pages-PBA/css/list.css"/>
+		<script src="/Pages-PBA/lib/requirejs/require.min.js" data-main="/Pages-PBA/js/list"></script>
+	</head>
+	<body>
+		<!--顶部-->
+		<div id="container-header"></div>
+		
+		<!--内容-->
+		<div class="main-body">
+			<div class="content-wrap">
+				<ul class="tag">
+					<li><a href="/Pages-PBA/">首页 /</a></li>
+					<li><a href="javascript:">养肤护肤</a></li>
+				</ul>
+				<ul class="categoryList">
+					<li>
+						<div class="category-cont">
+							<span class="main-category"><a href="#">护肤：</a></span>
+							<ul>
+								<li><a href="#">洁面</a></li>
+								<li><a href="#">爽肤水</a></li>
+								<li><a href="#">乳液</a></li>
+								<li><a href="#">面霜</a></li>
+								<li><a href="#">手工皂</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="category-cont">
+							<span class="main-category"><a href="#">彩妆：</a></span>
+							<ul>
+								<li><a href="#">BB霜</a></li>
+								<li><a href="#">底妆</a></li>
+								<li><a href="#">眼妆</a></li>
+								<li><a href="#">唇妆美甲</a></li>
+								<li><a href="#">卸妆</a></li>
+								<li><a href="#">工具</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="category-cont">
+							<span class="main-category"><a href="#">面膜：</a></span>
+							<ul>
+								<li><a href="#">面膜贴</a></li>
+								<li><a href="#">果酱面膜</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="category-cont">
+							<span class="main-category"><a href="#">功效：</a></span>
+							<ul>
+								<li><a href="#">遮瑕</a></li>
+								<li><a href="#">隔离</a></li>
+								<li><a href="#">保湿</a></li>
+								<li><a href="#">控油</a></li>
+								<li><a href="#">美白</a></li>
+								<li><a href="#">补水</a></li>
+								<li><a href="#">祛痘</a></li>
+								<li><a href="#">淡斑</a></li>
+								<li><a href="#">排毒</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<div class="goods-list">
+					<ul class="category-cont">
+						<li><a href="#">推荐</a></li>
+						<li><a href="#">价格从高到低</a></li>
+						<li><a href="#">价格从低到高</a></li>
+						<li><a href="#">按最新</a></li>
+					</ul>
+					<div class="goods-list-show">
+						<ul>
+							
+						</ul>
+					</div>
+				</div>
+				
+				<nav aria-label="Page navigation">
+				  <ul class="pagination">
+				  </ul>
+				</nav>
+			</div>
+		</div>
+		
+		<div style="clear: both;"></div>
+		<!--底部-->
+		<div class="footer"></div>
+		<!--右边-->
+		<div class="server-bar"></div>
+		
+		<script type="text/html" id="list-template">
+			{{each products pro}}
+			<li>
+				<a href="/Pages-PBA/html/detail.html?id={{pro.id}}">
+					<img src="{{pro.img}}" class="goods-img"/>
+				</a>
+				<p class="goods-title"><a href="/Pages-PBA/html/detail.html">{{pro.title}}</a></p>
+				<p class="goods-price">￥{{pro.price}}</p>
+			</li>
+			{{/each}}
+		</script>
+	</body>
+</html>

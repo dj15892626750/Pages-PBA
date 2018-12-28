@@ -1,0 +1,415 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/*轮播*/
+.banner{
+    width: 100%;
+    height: 561px;  
+}
+.banner .wrap{
+    width: 1226px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 27px;
+}
+.banner .wrap .banner-box{
+    height: 393px;
+    position: relative;
+}
+.banner .wrap .banner-box ul li{
+    float: left;
+}
+.banner .wrap .banner-box .prev{
+    left: 245px;
+    background: url(../imgs/slider-arrow-gray.png) no-repeat;
+    background-position: -202px 0;
+}
+.banner .wrap .banner-box .next{
+    right: 38px;
+    background: url(../imgs/slider-arrow-gray.png) no-repeat;
+    background-position: 0px 0;
+}
+
+/*商品分类*/
+.banner .wrap .list-category{
+    width: 210px;
+    height: 393px;
+    background: rgba(0,0,0,0.6);
+    box-sizing: border-box;
+    padding: 21px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 200;
+}
+.banner .wrap .list-category ul{
+//  position: relative;
+}
+.banner .wrap .list-category ul>li{
+    height: 50px;
+    line-height: 50px;
+    font-size: 12px;   
+}
+.banner .wrap .list-category ul>li .category-name{
+    padding-left: 32px;
+    width: 178px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+}
+.banner .wrap .list-category ul>li .category-name span{
+    position: absolute;
+    top: 0;
+    right: 18px;    
+}
+.banner .wrap .list-category ul .category-item{
+    width:290px;
+    height: 393px;
+    position: absolute;
+    left: 210px;
+    top: 0px;
+    z-index: 200;
+    background-color: #f6f6f6;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.18);
+    display: none;
+}
+.banner .wrap .list-category ul .category-item .category-child{
+    width: 290px;
+    height: 393px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.banner .wrap .list-category ul .category-item .category-child>li{
+    height: 78px;
+    width: 290px;
+}
+
+ .banner .wrap .list-category ul .category-item .category-child li .link{
+    padding: 16px 36px;
+    padding-right: 0;
+    height: 45px;
+    width: 151px;
+    float: left;
+    line-height: 22px;
+}
+.banner .wrap .list-category ul .category-item .category-child li .link img{
+    display: inline-block;
+    vertical-align: middle;
+    height: 45px;
+    width: 45px;
+}
+.banner .wrap .list-category ul .category-item .category-child li .link .text{
+    font-size: 16px;
+    width: 101px;
+    text-align: center;
+    display: inline-block;
+    color: #969696;
+}
+.banner .wrap .list-category ul .category-item .category-child>li .btn-select{
+    width: 72px;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 25px 0;
+    color: #F498FE;
+    border-radius: 14px;
+    border: 1px solid #F498FE;
+    display: inline-block;
+    text-align: center;
+}
+.banner .wrap .list-category ul .category-item .category-child>li .link:hover .text{
+    color: #E60041;
+}
+.banner .wrap .list-category ul .category-item .category-child>li .btn-select:hover{
+    color: #fff;
+    background-color: #F498FE;
+}
+.banner .wrap .list-category ul .category-item .line{
+    width: 1px;
+    height: 370px;
+    margin: 10px 0;
+    background-color: #efefef;
+    float: left;
+}
+.banner .banner-sub{
+    width: 1226px;
+    height: 141px;
+    margin: 0 auto;
+}
+.banner .banner-sub a img{
+    float: left;
+    margin-right: 4px;
+}
+.banner .banner-sub a:last-child img{
+    margin: 0;
+}
+/*内容区*/
+/*明星产品*/
+.container{
+    width: 100%;
+    height: 561px;
+    box-sizing: border-box;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.container .start-wrap{
+    width: 1226px;
+    margin: 0 auto;
+}
+.container .start-wrap .top{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.container .start-wrap .top h1{
+    font-size: 34px;
+    line-height: 44px;
+    font-weight: 500;
+    color: #969696;
+
+}
+.container .start-wrap .top img{
+    width: 279px;
+    height: 5px;
+    padding-top: 5px;
+    margin: 0 auto;
+}
+.container .start-wrap .top p{
+    font-size: 15px;
+    line-height: 30px;
+    color: #666;
+}
+.container .start-wrap .bottom ul li{
+    width: 242px;
+    height: 351px;
+    position: relative;
+    float: left;
+    margin-right: 4px;
+    background: url(../imgs/star_goods_bg.png) no-repeat center;
+}
+.container .start-wrap .bottom ul li:last-child{
+    margin: 0;
+}
+
+/*商品信息*/
+.container .start-wrap .bottom ul li .goods-info{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    padding-bottom: 10px;
+}
+/*标题*/
+.container .start-wrap .bottom ul li .goods-info .goods-title{
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #969696;
+}
+/*简介*/
+.container .start-wrap .bottom ul li .goods-info .goods-present{
+    font-size: 14px;
+    line-height: 34px;
+    color: #656565;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*价格*/
+.container .start-wrap .bottom ul li .goods-info .goods-price{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #fe003f;
+}
+.container .start-wrap .bottom ul li:hover{
+    box-shadow: 0 8px 16px rgba(0,0,0,0.18);
+}
+.container .start-wrap .bottom ul li:hover .goods-title{
+    color: #E60041;
+}
+
+/*内容分类展示*/
+.content{
+    width: 100%;
+    background: #f5f5f5;
+}
+.content .content-box{
+    width: 1226px;
+    margin: 0 auto;
+}
+/*彩妆香水*/
+.content .content-box .cosmetics .title{
+    padding-top: 25px;
+    padding-bottom: 15px;
+    position: relative;
+}
+.content .content-box .cosmetics .title h1{
+    font-size: 34px;
+    line-height: 44px;
+    font-weight: 500;
+    color: #969696;
+}
+.content .content-box .cosmetics .title p{
+    font-size: 15px;
+    line-height: 30px;
+    color: #666;
+}
+.content .content-box .cosmetics .title a{
+    position: absolute;
+    right: 0;
+    bottom: 34px;
+}
+.cosmetics .cosmetics-goods{
+    height: 650px;
+}
+.cosmetics .cosmetics-goods .cosmetics-banner{
+    width: 253px;
+    height: 611px;
+    float: left;
+}
+.cosmetics .cosmetics-goods .right{
+    width: 973px;
+    height: 624px;
+    float: right;
+}
+.cosmetics .cosmetics-goods .right ul li{
+    width: 232px;
+    height: 299px;
+    margin-left: 10px;
+    margin-bottom: 13px;
+    float: left;
+    background: #fff;
+    position: relative;
+}
+
+/*商品信息*/
+.cosmetics .cosmetics-goods .right ul li  .goods-info{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    padding-bottom: 10px;
+}
+/*标题*/
+.cosmetics .cosmetics-goods .right ul li  .goods-info .goods-title{
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 500;
+    color: #969696;
+}
+/*简介*/
+.cosmetics .cosmetics-goods .right ul li  .goods-info .goods-present{
+    font-size: 13px;
+    line-height: 27px;
+    color: #656565;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*价格*/
+.cosmetics .cosmetics-goods .right ul li  .goods-info .goods-price{
+    font-size: 17px;
+    line-height: 27px;
+    font-weight: bold;
+    color: #fe003f;
+}
+.cosmetics .cosmetics-goods .right ul li:hover{
+    box-shadow: 0 8px 16px rgba(0,0,0,0.18);
+}
+.cosmetics .cosmetics-goods .right ul li:hover .goods-title{
+    color: #E60041;
+}
+
+/*美容食品*/
+.container .end-wrap{
+    width: 1226px;
+    margin: 0 auto;
+}
+.container .end-wrap .top{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.container .end-wrap .top h1{
+    font-size: 34px;
+    line-height: 44px;
+    font-weight: 500;
+    color: #969696;
+
+}
+.container .end-wrap .top img{
+    width: 279px;
+    height: 5px;
+    padding-top: 5px;
+    margin: 0 auto;
+}
+.container .end-wrap .top p{
+    font-size: 15px;
+    line-height: 30px;
+    color: #666;
+}
+.container .end-wrap ul li{
+    width: 242px;
+    height: 351px;
+    position: relative;
+    float: left;
+    margin-right: 4px;
+    background: url(../imgs/star_goods_bg.png) no-repeat center;
+}
+
+.container .end-wrap ul li:last-child{
+    margin: 0;
+}
+
+/*商品信息*/
+.container .end-wrap ul li .goods-info{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    padding-bottom: 10px;
+}
+/*标题*/
+.container .end-wrap ul li .goods-info .goods-title{
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #969696;
+}
+/*简介*/
+.container .end-wrap ul li .goods-info .goods-present{
+    font-size: 14px;
+    line-height: 34px;
+    color: #656565;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*价格*/
+.container .end-wrap ul li .goods-info .goods-price{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #fe003f;
+}
+.container .end-wrap ul li:hover{
+    box-shadow: 0 8px 16px rgba(0,0,0,0.18);
+}
+.container .end-wrap .bottom ul li:hover .goods-title{
+    color: #E60041;
+}
+

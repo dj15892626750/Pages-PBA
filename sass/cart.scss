@@ -1,0 +1,187 @@
+.hidden{
+        display: none;
+    }
+.container{
+    width:1240px;
+    margin: 0 auto;
+    color: #666;
+    font-size: 14px;
+    a{
+        color: #666;
+    }
+    input{
+        width: 16px;
+        height: 16px;
+    }
+    
+    .head{
+        border: 1px solid #E2E2E2;
+        width: 1180px;
+        height: 40px;
+        margin: 0 auto;
+        margin-top: 30px;
+        line-height: 40px;
+        span{
+            display: inline-block;
+            text-align: center;
+            float: left;
+        }
+        span:first-child{
+            width: 80px;
+        }
+        span:nth-child(2){
+            width: 80px;
+        }
+        span:nth-child(3){
+            width: 150px;
+        }
+        span:nth-child(4){
+            width: 400px;
+        }
+        span:nth-child(5){
+            width: 100px;
+        }
+        span:nth-child(6){
+            width: 150px;
+        }
+        span:nth-child(7){
+            width: 115px;
+        }
+        span:nth-child(8){
+            width: 90px;  
+        }
+    }
+    
+    .cart-list{
+        width: 1180px;
+        margin: 0 auto;
+        .goods{
+           height: 127px; 
+           background: #FAFAD2;
+           margin: 15px 0;
+           div{
+               float: left;
+               text-align: center;
+               line-height: 127px;
+            }
+           .chc{
+               width: 80px;
+           }
+           .id{
+               width: 80px;
+           }
+           .imgs{
+               width: 150px;
+               img{
+                   height: 110px;
+                   margin: 8px auto;
+                   vertical-align: top;
+                }
+            }  
+            .title{
+                width: 400px;
+                text-align: left;
+            } 
+            .price{
+                width: 100px;
+            } 
+            .amount{
+                width: 150px;
+                margin-top: 48px;
+                p{
+                    border: 1px solid #e2e2e2;
+                    width: 132px;
+                    height: 28px;
+                    line-height: 28px;
+                    margin: 0 auto;
+                    span{
+                        float: left;
+                        text-align: center;
+                        width: 28px;
+                        height: 100%;
+                        cursor: pointer;
+                    }
+                    .count{
+                        float: left;
+                        border: none;
+                        width: 74px;
+                        text-align: center;
+                        border-left: 1px solid #e2e2e2;
+                        border-right: 1px solid #e2e2e2;
+                        height: 20px;
+                        line-height: 18px;
+                        padding: 4px 0;
+                        overflow: hidden;
+                    }
+                }
+            }
+            .subtotal{
+                width: 115px;
+            }
+            .handle{
+                width: 90px;
+            }
+        }
+    }
+    
+    
+    .result{
+        width: 1180px;
+        height:50px ;
+        line-height: 50px;
+        font-size: 14px;
+        margin: 0 auto ;
+        margin-top: 30px;
+        border: 1px solid #E2E2E2;
+        .delete{
+            padding: 0 10px;
+            margin-left: 30px;
+        }
+        p{
+            height: 50px;
+            float: right;
+            margin-right: 25px;
+            .allprice{
+                font-size: 24px;
+                color: orangered;
+            }
+            .accounts{
+                float: right;
+                width: 80px;
+                height: 50px;
+                background: red;
+                font-size: 18px;
+                font-weight: bold;
+                text-align: center;
+                line-height: 50px;
+                color: #fff;
+                margin-left: 20px;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+.empty{
+    width: 1240px;
+    height: 218px;
+    margin: 0 auto;
+    position: relative;
+    background: url(../imgs/cartIcon.jpg) no-repeat 425px center;
+    .wrap{
+        width: 260px;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        a{
+            color: #d12147;
+        }
+        a:hover{
+            color: #f5345e;
+        }
+    }
+}

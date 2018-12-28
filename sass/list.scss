@@ -1,0 +1,102 @@
+ul{
+    margin-bottom: 0;
+}
+.nav ul{
+    height: 45px;
+}
+//内容主体
+.main-body{
+    width: 100%;
+    margin-top: 20px;
+    .content-wrap{
+        width: 1240px;
+        margin: 0 auto;
+        font-size: 14px;
+        
+        .tag{
+            height: 20px;
+            margin-bottom: 7px;
+            li{
+                float: left;
+                a{
+                    color: #969696;
+                }
+            }
+        }
+        .categoryList{
+            height: 224px;
+            >li{
+                height: 56px;
+                border-top: 1px solid #e2e2e2;
+                .category-cont{
+                    height: 19px;
+                    padding: 18px 0;
+                    .main-category a{
+                        color: #ff498c;
+                        float: left;
+                    }
+                    ul{
+                        float: left;
+                        li{
+                            float: left;
+                            padding: 0px 22px;
+                            border-right:1px solid #e2e2e2;
+                            a{
+                                color: #535353;
+                            }
+                        }
+                        li:last-child{
+                            border: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .goods-list .category-cont{
+            height: 47px;
+            border-top: none;
+            background-color: #f8f8f8;
+            padding: 14px 0px;
+            >li{
+                float: left;
+                padding: 0px 22px;
+                border-right:1px solid #e2e2e2;
+                a{
+                    color: #535353;
+                }
+            }
+        }
+        .goods-list .goods-list-show{
+            min-height:385px;
+            margin-top:30px;
+            ul{
+                width: 1250px;
+                li{
+                    width: 302px;
+                    height: 385px;
+                    float:left;
+                    padding-right: 10px;
+                    margin-bottom: 10px;
+                    .goods-img{
+                        width: 302px;
+                        height: 302px;
+                        vertical-align: top;
+                        margin-bottom: 20px;
+                    }
+                    .goods-title{
+                        height: 21px;
+                        line-height: 21px;
+                        a{
+                            color: #969696;
+                        }
+                    }
+                    .goods-price{
+                        margin-top: 20px;
+                        color: #969696;
+                    }
+                }
+                
+            } 
+        }
+    }
+}

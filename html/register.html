@@ -1,0 +1,46 @@
+/Pages_PBA<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>PBA-用户注册</title>
+		<link rel="stylesheet" type="text/css" href="/Pages-PBA/css/register.css"/>
+		<script src="/Pages-PBA/lib/requirejs/require.min.js" data-main="/Pages-PBA/js/register"></script>
+	</head>
+	<body>
+		<div class="register">
+			<div class="logo">
+				<a href="/Pages-PBA/">
+					<img src="/Pages-PBA/imgs/reg-logo.png"/>
+				</a>
+				<h1>注册个人账号</h1>
+				<span class="error"></span>
+			</div>
+			<form id="reg-form">
+				<p>
+					<input type="text" name="username" class="username" value="" placeholder="请输入手机号"/>
+					<label class="user_error"></label>
+				</p>
+				<p>
+					<input type="text" name="" class="code" placeholder="请输入验证码" />
+					<span class="code-img"></span>
+					<label class="code_error"></label>
+				</p>
+				<p>
+					<input type="text" name="" class="phone-code" value="" placeholder="请输入手机验证码"/>
+					<input type="button" class="send" value="获取手机验证码" />
+					<label class="phone_error"></label>
+				</p>
+				<p>
+					<input type="password" name="" class="password" placeholder="设置密码"/>
+					<label class="pwd_error"></label>
+				</p>
+				<p>
+					<input type="password" name="" class="pwd-true" placeholder="确认密码"/>
+					<label class="test_pwd_error"></label>
+				</p>
+				<p><input type="button" class="reg-btn" value="立即注册"/></p>
+				<p>点击“立即注册”,即表示您同意并且愿意遵守PBA<a href="javascript:">用户协议</a></p>
+			</form>
+		</div>
+	</body>
+</html>

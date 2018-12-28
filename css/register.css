@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.register {
+  width: 320px;
+  height: 529px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.register .logo {
+  text-align: center;
+  margin-bottom: 13px;
+}
+
+.register .logo h1 {
+  font-size: 27px;
+  font-weight: 500;
+  padding-top: 25px;
+}
+
+.register .logo .error {
+  width: 355px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  color: red;
+  text-align: center;
+  margin-top: 15px;
+  display: none;
+}
+
+.register form {
+  width: 320px;
+  height: 383px;
+  padding-top: 8px;
+}
+
+.register form p {
+  height: 38px;
+  width: 320px;
+  margin-top: 13px;
+  font-size: 14px;
+  position: relative;
+}
+
+.register form p label {
+  position: absolute;
+  top: 0;
+  left: 330px;
+  color: red;
+  width: 320px;
+  line-height: 40px;
+}
+
+.register form p input {
+  height: 38px;
+  border: 0;
+  border: 1px solid #efefef;
+  padding: 0 10px;
+}
+
+.register form .username, .register form .password, .register form .pwd-true {
+  width: 298px;
+}
+
+.register form p:nth-of-type(2) .code-img {
+  width: 120px;
+  height: 37px;
+  line-height: 37px;
+  float: right;
+}
+
+.register form p:nth-of-type(3) .send {
+  width: 120px;
+  height: 38px;
+  float: right;
+  text-decoration: none;
+  background: #ff498c;
+  color: #fff;
+  text-align: center;
+  line-height: 38px;
+}
+
+.register form .reg-btn {
+  width: 320px;
+  height: 40px;
+  background: #ff498c;
+  border: 1px solid #FF498C;
+  color: #fff;
+}
+
+.register form p:last-child {
+  margin-top: 22px;
+  color: #a9a9a9;
+}
+
+.register form p:last-child a {
+  text-decoration: none;
+  color: #000;
+}

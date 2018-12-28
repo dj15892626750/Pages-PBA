@@ -1,0 +1,40 @@
+/Pages_PBA<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>PBA-用户登录</title>
+		<link rel="stylesheet" type="text/css" href="/Pages-PBA/css/login.css"/>
+		<script src="/Pages-PBA/lib/requirejs/require.min.js" data-main="/Pages-PBA/js/login"></script>
+	</head>
+	<body>
+		<div class="login">
+			<div class="logo">
+				<a href="/Pages-PBA/">
+					<img src="/Pages-PBA/imgs/reg-logo.png"/>
+				</a>
+			</div>
+			<span class="error"></span>
+			<form id="login-form">
+				<p>
+					<input type="text" name="username" id="username" value="" placeholder="手机号码"/>
+					<input type="password" id="password" placeholder="密码" />
+				</p>
+				<p>
+					<input type="submit" id="login-btn" value="立即登录"/>
+				</p>
+				<div class="check">
+					<p>
+						<input type="checkbox" name="remember" id="remember" value=""/>
+						<label for="remember">记住账号</label>
+					</p>
+					<p class="last">
+						<a href="/Pages-PBA/html/register.html">注册账号</a>
+						<span>|</span>
+						<a href="javascript:">忘记密码？</a>
+					</p>
+					
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

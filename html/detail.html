@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>PBA-详情页</title>
+		<link rel="stylesheet" type="text/css" href="/Pages-PBA/css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="/Pages-PBA/css/detail.css"/>
+		<script src="/Pages-PBA/lib/requirejs/require.min.js" data-main="/Pages-PBA/js/detail"></script>
+	</head>
+	<body>
+		<!--顶部-->
+		<div id="container-header"></div>
+		
+		<!--内容详情-->
+		<div class="container">
+			<div class="goods-info">
+				
+			</div>
+			
+			<!--商品详情介绍-->
+			<div class="goods-intro">
+				<!--热门商品-->
+				<div class="hot">
+					<h3>热门商品</h3>
+					<ul>
+						
+					</ul>
+				</div>
+				<!--商品详情-->
+				<div class="details">
+					<h3>商品详情</h3>
+					<div class="pic-list">
+
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--底部-->
+		<div class="footer"></div>
+		<!--右边-->
+		<div class="server-bar"></div>
+		
+		
+		<script type="text/html" id="detail-img-template">
+			<div class="goods-img">
+					<div style="display: none" class="id">{{id}}</div>
+					<div class="middle-pic">
+						<img class="zoom-img" src="{{zoomImgs[0].middle}}" data-zoom-image="{{zoomImgs[0].big}}"/>
+					</div>
+					<div class="small-pic" id="small-pic">
+						{{each zoomImgs img}}
+							<a href="javascript:" data-image="{{img.middle}}" data-zoom-image="{{img.big}}">
+								<img src="{{img.small}}"/>
+							</a>
+						{{/each}}
+					</div>
+				</div>
+				<div class="text">
+					<div class="name">
+						<h1>{{title}}</h1>
+						<p>{{desc}}</p>
+					</div>
+					<div class="price">
+						￥<span>{{price}}</span>
+					</div>
+					<div class="color">
+						<label>规格：</label>
+						<div class="sub">
+							{{each colors col}}
+								<a href="javascript:">{{col.P}}</a>
+							{{/each}}
+						</div>
+						<span style="display: none;color: orangered;">请选择商品规格</span>
+					</div>
+					<div class="amount">
+						<label>数量：</label>
+						<div class="sub">
+							<p>
+								<span class="dec">-</span>
+								<input type="text" class="count" value="1" min="1"/>
+								<span class="add">+</span>
+							</p>
+						</div>
+					</div>
+					<div class="pay">
+						<a href="javascript:" class="add-cart">加入购物车</a>
+						<a href="javascript:" class="buy">立即购买</a>
+					</div>
+					<div class="notice">
+                		服务承诺：31天无理由退换货，按时发货，全场满99元包邮
+					</div>
+				</div>
+		</script>
+	
+		<!--商品详情-->
+		<script type="text/html" id="details-template">
+			{{each details dt}}
+				<img src="{{dt.dtl}}"/>
+			{{/each}}
+		</script>
+		
+		<!--热门商品-->
+		<script type="text/html" id="hot-template">
+			{{each hot prod}}
+			<li>
+				<a href="/Pages-PBA/html/detail.html?id={{prod.id}}" class="pic">
+					<img src="{{prod.imgs}}"/>
+				</a>
+				<span class="title">
+					<a href="/Pages-PBA/html/detail.html?id={{prod.id}}">{{prod.title}}</a>
+					<span>￥{{prod.price}}</span>
+				</span>
+			</li>
+			{{/each}}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="/Pages-PBA/css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="/Pages-PBA/css/cart.css"/>
+		<script src="/Pages-PBA/lib/requirejs/require.min.js" data-main="/Pages-PBA/js/cart"></script>
+	</head>
+	<body>
+		<!--顶部-->
+		<div id="container-header"></div>
+		
+		<div class="container hidden">
+			<div class="head">
+				<span class="all">
+					<input type="checkbox" name="all" id="all" value=""/>
+					<label for="all">全选</label>
+				</span>
+				<span>商品ID</span>
+				<span>商品图片</span>
+				<span>商品标题</span>
+				<span>单价(元)</span>
+				<span>数量</span>
+				<span>金额(元)</span>
+				<span>操作</span>
+			</div>
+			<!--购物车商品-->
+			<div class="cart-list">
+				
+			</div>
+			
+			<div class="result" id="result">
+				<a href="javascript:" class="delete">删除选中的商品</a>
+				<a href="javascript:" class="clear">清空购物车</a>
+				<p>
+					<span>总支付：￥</span><span class="allprice">0.00</span>
+					<a href="javascript:" class="accounts">去结算</a>
+				</p>
+			</div>
+		</div>
+		<!--购物车没有商品时-->
+		<div class="empty hidden">
+			<div class="wrap">
+				<p>购物车里空空如也，赶紧去 <a href="/">逛逛吧></a></p>
+				<p>或者您可以先进行 <a href="/Pages-PBA/html/login.html">登录></a></p>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+		<!--底部-->
+		<div class="footer"></div>
+		
+		<script type="text/html" id="cart-template">
+			{{each cart prod}}
+			<div class="goods">
+				<div class="chc">
+					<input type="checkbox" name="" class="che-prod" value=""/>
+				</div>
+				<div class="id">{{prod.id}}</div>
+				<div class="imgs">
+					<img src="{{prod.img}}"/>
+				</div>
+				<div class="title">{{prod.title}}&nbsp;&nbsp;[{{prod.spec}}]</div>
+				<div class="price">{{prod.price}}</div>
+				<div class="amount">
+					<p>
+						<span class="dec">-</span>
+						<input type="text" class="count" value="{{prod.amount}}" min="1"/>
+						<span class="add">+</span>
+					</p>
+				</div>
+				<div class="subtotal">{{(prod.price*prod.amount).toFixed(2)}}</div>
+				<div class="handle">
+					<a href="javascript:" class="del">删除</a>
+				</div>
+			</div>
+			{{/each}}
+		</script>
+	</body>
+</html>
